@@ -1,0 +1,18 @@
+
+@media screen and (max-width: 1000px) {
+    .conteudo-sobre {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(34, 36, 163);
+    }
+
+    .logo {
+        width: 200px;
+    }
+}
+
+ 
