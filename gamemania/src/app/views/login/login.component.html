@@ -1,36 +1,20 @@
-<header>
-    <div class="container">
-        <img src="assets\img\LOGO.svg" alt="logo do site"> 
-        <nav class="menu">
-            <a href="index.html">inicio</a>
-            <a href="login.html">login</a>
-            <a href="index.html">unidades</a>
-            <a href="index.html">e-sports</a>
-        </nav>
-    </div>
-</header>
+<form action="" method="post"></form>
 
+<main>
+    <form (ngSubmit)='receberDados()'>
 
-<body>
-    <div id="login">
-        <form class="card">
-            <div class="card-header">
-                <h2>LOGIN - GAME MANIA</h2>
-            </div>
-            <div class="card-content">
-                <div class="card-content-area">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" id="usuario" autocomplete="off">
-                </div>
-                <div class="card-content-area">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" autocomplete="off">
-                </div>
-            </div>
-            <div class="card-footer">
-                <input type="submit" value="LOGIN" class="submit">
-                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-            </div>
-        </form>
-    </div>
-</body>
+        <div class="campo-label">
+            <label for="email">Email</label>
+            <input type="email"   name="email" id="email" placeholder="Ex.:email@email.com" [(ngModel)]="userModel.email">
+        </div>
+
+        <div class="campo-label">
+            <label for="senha">Senha</label>
+            <input type="password" name="password" id="senha" placeholder="Sua senha aqui"[(ngModel)]="userModel.password" >
+        </div>
+        <input id=botao-enviar type="submit" value="Fazer Login">
+
+    </form>
+
+</main>
+
